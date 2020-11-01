@@ -1,0 +1,25 @@
+.main {
+	margin-top: 80px;
+	padding: 10px;
+	margin-left: 350px;
+}
+.topheading {
+	margin: 20px;
+}
+.lable {
+	display: inline-block;
+}
+.alert,
+.download {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 2px 5px;
+	float: right;
+	margin-left: 5px;
+}
+.alert i, .alert span {
+	padding: 0 4px;
+}
+.download i {
+	padding: 0 4px;
+}

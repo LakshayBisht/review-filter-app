@@ -1,0 +1,70 @@
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	z-index: 10;
+	background-color: white;
+	border-bottom: 1px solid black;
+	padding: 0px 15px;
+}
+.searchproduct {
+	float: left;
+	width: calc(calc(100% -35px) - 55%);
+}
+.sorting,
+.translation {
+	float: right;
+	width: calc(calc(100% -35px) - 90%);
+}
+.sorting {
+	margin-right: 5px;
+}
+
+.mainmenubtn {
+	width: 100%;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 5px;
+	background-color: white;
+	border: 1px solid black;
+}
+.translation .mainmenubtn,
+.sorting .mainmenubtn {
+	padding: 2px;
+}
+.dropdown {
+	border-radius: 5px;
+	position: relative;
+	display: inline-block;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.dropdown-child {
+	display: none;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+	padding: 10px 0;
+	background-color: white;
+	border: 1px solid black;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.dropdown-child a {
+	padding: 5px 20px;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-child a:hover {
+	background-color: #efefef;
+}
+.dropdown:hover .dropdown-child {
+	display: block;
+}
+.dropdown:hover .mainmenubtn {
+	border-bottom: none;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
